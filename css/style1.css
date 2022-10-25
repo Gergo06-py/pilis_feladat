@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/bg.png') top center no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.header {
+    background: url('../img/logo1.jpg');
+    height: 240px;
+    grid-column: span 2;
+}
+
+.header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: calc(120px - 0.5em);
+    font-size: 4em;
+    text-align: right;
+    padding-right: 3em;
+}
+
+.sidebar h3 {
+    margin-top: 30px;
+    background-color: #203926;
+    color: white;
+}
+
+.menupont {
+    background: url('../img/img02.gif') no-repeat bottom right #96a96f;
+    height: 200px;
+}
+
+.menupont li {
+    list-style-type: none;
+}
+
+.menupont a {
+    color: #626f39;
+    text-decoration: none;
+    line-height: 2.5;
+    margin: 1em;
+}
+
+.content {
+    display: grid;
+    gap: 1em;
+    padding: 0 20px;
+}
+
+.content .news {
+    line-height: 1.5;
+}
+
+.content .news {
+    margin: 1em 0 2em 0;
+}
+
+.content .news h2 {
+    margin: 5px 0;
+}
+
+.content .news p img {
+    float: left;
+    margin-right: 1em;
+}
+
+.footer {
+    grid-column: span 2;
+}
+
+.footer p {
+    background-color: #203926;
+    color: #fff;
+    text-align: center;
+}
