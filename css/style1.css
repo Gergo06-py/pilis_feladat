@@ -37,6 +37,10 @@ body {
     padding-right: 3em;
 }
 
+.sidebar {
+    padding-bottom: 30px;
+}
+
 .sidebar h3 {
     margin-top: 30px;
     background-color: #203926;
@@ -65,16 +69,13 @@ body {
     padding: 0 20px;
 }
 
-.content .news {
+.news {
     line-height: 1.5;
+    margin-top: 25px;
 }
 
-.content .news {
-    margin: 1em 0 2em 0;
-}
-
-.content .news h2 {
-    margin: 5px 0;
+.news h2 {
+    margin-bottom: 20px;
 }
 
 .content .news p img {
