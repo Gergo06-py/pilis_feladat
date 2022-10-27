@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url('../img/bg.png') top center no-repeat;
+    background: #ccc;
     background-size: 100% 100%;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
@@ -18,11 +18,12 @@ body {
     width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 220px;
 }
 
 .header {
-    background: url('../img/logo1.jpg');
+    background: url('../img/logo3.jpg') top center no-repeat;
+    background-size: 100% 100%;
     height: 240px;
     grid-column: span 2;
 }
@@ -31,19 +32,21 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: calc(120px - 0.5em);
-    font-size: 4em;
+    padding-top: 0.3em;
+    font-size: 2em;
     text-align: right;
-    padding-right: 3em;
+    padding-right: calc(220px + 14em);
 }
 
 .sidebar {
     display: grid;
+    grid-column: 2;
+    text-align: center;
     padding-bottom: 30px;
 }
 
 #style-dropdown {
-    background-color: #203926;
+    background-color: #996600;
     color: #fff;
     align-self: flex-end;
     justify-self: center;
@@ -55,13 +58,11 @@ body {
 }
 
 .sidebar h3 {
+    background-color: #ccc;
     margin-top: 30px;
-    background-color: #203926;
-    color: white;
 }
 
 .menupont {
-    background: url('../img/img02.gif') no-repeat bottom right #96a96f;
     height: 200px;
 }
 
@@ -73,26 +74,32 @@ body {
     color: #626f39;
     text-decoration: none;
     line-height: 2.5;
-    margin: 1em;
 }
 
 .content {
     display: grid;
-    gap: 1em;
-    padding: 0 120px 50px 15px;
+    grid-column: 1;
+    grid-row: 2;
+    gap: 5em;
+    padding: 20px 60px 5em 15px;
 }
 
 .news {
     line-height: 1.5;
-    margin-top: 25px;
-    text-align: justify;
 }
 
 .news h2 {
+    background-color: #996600;
     margin-bottom: 20px;
+    padding: 0 10px;
+    color: white;
 }
 
-.content .news p img {
+.news p {
+    color: #657030;
+}
+
+.news p img {
     float: left;
     margin-right: 1em;
 }
@@ -102,7 +109,8 @@ body {
 }
 
 .footer p {
-    background-color: #203926;
+    background-color: #db9d66;
     color: #fff;
     text-align: center;
+    padding-bottom: 50px;
 }
